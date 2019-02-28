@@ -157,7 +157,14 @@ header.banner {
     header.banner {
         min-height: 260vh;     
     }
-    
+    .productitems .owl-nav {       
+        top: -40px;      
+    }
+    header.banner .pagntn {     
+        left: 0;
+        top: -15px;
+        right: auto;      
+    }
   }
 
   @include media-breakpoint-between(md, lg) {

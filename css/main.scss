@@ -10,10 +10,15 @@ $play : 'Playfair Display', serif;
     font-size: 14px;   
     font-weight: 600;
 }
+
+
 @import "../bootstrap/scss/bootstrap";
 @import "navbar";
 @import "banner";
 @import "about";
+@import "team";
+@import "updates";
+@import "footer";
 
 body {
     font-family: $mont;  
@@ -35,10 +40,18 @@ h1.mainheading {
     z-index: -1;
     margin-top: 100px;
 }
+.mt-8 {
+    margin-top: 180px;
+}
 @include media-breakpoint-down(md) {
     h1.mainheading { 
         font-size: 50px; 
         margin-bottom: -15px;
     }
-    
+    .teams button.owl-next{
+       right: 0;
+    }
+    .teams button.owl-prev{
+       left: 0;
+     }
   }

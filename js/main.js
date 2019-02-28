@@ -9,22 +9,66 @@
 
 
 // owl slder 
-
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-  margin: 10,
-  dots: false,
-  loop: true,
-  responsive: {
+$(document).ready(function() {
+    $('.productitems').owlCarousel({
+    loop: false,
+    dot:false,
+    responsiveClass: true,
+    responsive: {
     0: {
-      items: 1
+    items: 1,
+    nav: true,
+    margin: 10
     },
-    600: {
-      items: 1
+    500: {
+    items: 1,
+    nav: false,
+    margin: 20
+    },
+    700: {
+    items: 1,
+    nav: false,
+    margin: 20
     },
     1000: {
-      items: 1
+    items: 1,
+    nav: true,
+    loop: false,
+    margin: 20
     }
-  }
-  
-});
+    }
+    })   
+    })
+
+
+// owl slder team
+
+$(document).ready(function() {
+$('.teams').owlCarousel({
+loop: false,
+responsiveClass: true,
+responsive: {
+0: {
+items: 1,
+nav: true,
+margin: 0
+},
+500: {
+items: 2,
+nav: false,
+margin: -30
+},
+700: {
+items: 3,
+nav: false,
+margin: -30
+},
+1000: {
+items: 4,
+nav: true,
+loop: false,
+margin: -30
+}
+}
+})   
+})

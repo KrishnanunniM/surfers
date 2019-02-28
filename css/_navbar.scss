@@ -52,6 +52,10 @@
     .custom-navbar {
         margin-top: 0px;
     }
+    div#navbarCollapse {
+        background-color: #00b0ff;
+        padding: 20px 10px;
+    }
   }
 
   @include media-breakpoint-between(md, lg) {

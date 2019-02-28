@@ -1,0 +1,63 @@
+.footer-top {
+    margin-top: 150px;
+    h1.mainheading{
+        font-size: 80px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: -30px;
+    }
+    .insta-area img {
+        display: block;
+        margin: 0 auto;
+    }
+    .follow {
+        text-align: left;
+        display: block;
+        background-color: #fff;
+        padding: 10px;
+        img{
+           float: left;
+        }
+    }
+    .main-footer{
+        background-color: #000;
+        margin-top: -7%;
+        min-height: 20vh;
+    }
+    p.footer-text {
+        font-size: 12px;
+        margin: 20px 0px;
+        color: #fff;
+        opacity: 0.4;
+        span{
+            margin-left: 15px;
+        }       
+    }
+    ul.footer-list {
+        padding: 0px;
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+            a{
+                font-size: 14px;
+                color: #fff;
+                text-decoration: none;
+                &:before{                    
+                        content: url(../img/wave-list.png);
+                        margin-right: 10px;
+                        vertical-align: text-bottom;
+                   
+                }
+            }
+        }
+    }
+    
+}
+
+
+@include media-breakpoint-down(md) {
+    .footer-top h1.mainheading {
+        font-size: 36px;   
+        margin-bottom: -10px;     
+    }
+}

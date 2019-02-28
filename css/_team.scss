@@ -1,0 +1,44 @@
+.teams {
+    .item {
+        background-color: #fff;
+        -webkit-box-shadow: 10px 7px 31px -8px rgba(0,0,0,0.48);
+        -moz-box-shadow: 10px 7px 31px -8px rgba(0,0,0,0.48);
+        box-shadow: 10px 7px 31px -8px rgba(0,0,0,0.48);
+        text-align: center;
+        padding: 30px 10px;
+        img {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        h2{
+            font-family: $mont;
+            color: #00b0ff;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        p{
+            font-family: $ral;
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        span.waves i {
+            margin: 0px -5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+            opacity: 0.4;
+        }
+        &:hover{
+            background-color: #00b0ff;
+            color: #fff;
+            h2{
+                color: #fff;
+            }
+        }        
+        
+    }    
+ 
+}

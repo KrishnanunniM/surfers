@@ -3,26 +3,62 @@
     height: 640px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    .about-info {
+    background-size: cover;   
+    .about-main {
         margin-bottom: -10%;
-        h2 {
-            font-size: 16px;
-            font-weight: 600;
-            text-align: center;
+
+        .about-info {
+            h2 {
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            p {
+                font-family: $play;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 600;
+            }
+
+            a.link {
+                color: #00b0ff;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                border-bottom: 2px solid #00b0ff;
+            }
         }
-        p{
-            font-family: $play;
-            font-size: 16px;
-            font-style: italic;
-            font-weight: 600;
-        }
-        a.link{
-            color: #00b0ff;
-            font-size: 14px;
-            font-weight: 600;
-            text-decoration: none;
-            border-bottom: 2px solid #00b0ff;
+
+        .video {
+            background-image: url(../img/video-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            -webkit-box-shadow: 0px 17px 94px -13px rgba(0,0,0,0.83);
+            -moz-box-shadow: 0px 17px 94px -13px rgba(0,0,0,0.83);
+            box-shadow: 0px 17px 94px -13px rgba(0,0,0,0.83);
+
+            img.play-btn {
+                width: 70px;
+            }
+
+            a {
+                border: 1px solid #ffff;
+                border-radius: 50%;
+                height: 130px;
+                width: 130px;
+                line-height: 115px;
+            }
         }
     }
+}
+
+
+
+@include media-breakpoint-down(md) {
+.about-main {
+    flex-direction: column-reverse;
+}
 }

@@ -10620,6 +10620,10 @@ a.text-dark:hover, a.text-dark:focus {
   .custom-navbar {
     margin-top: 0px;
   }
+  div#navbarCollapse {
+    background-color: #00b0ff;
+    padding: 20px 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
@@ -10788,6 +10792,14 @@ header.banner .pagntn {
   header.banner {
     min-height: 260vh;
   }
+  .productitems .owl-nav {
+    top: -40px;
+  }
+  header.banner .pagntn {
+    left: 0;
+    top: -15px;
+    right: auto;
+  }
 }
 
 .about-sec {
@@ -10798,29 +10810,218 @@ header.banner .pagntn {
   background-size: cover;
 }
 
-.about-sec .about-info {
+.about-sec .about-main {
   margin-bottom: -10%;
 }
 
-.about-sec .about-info h2 {
+.about-sec .about-main .about-info h2 {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
 
-.about-sec .about-info p {
+.about-sec .about-main .about-info p {
   font-family: "Playfair Display", serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 600;
 }
 
-.about-sec .about-info a.link {
+.about-sec .about-main .about-info a.link {
   color: #00b0ff;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 2px solid #00b0ff;
+}
+
+.about-sec .about-main .video {
+  background-image: url(../img/video-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  -webkit-box-shadow: 0px 17px 94px -13px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 17px 94px -13px rgba(0, 0, 0, 0.83);
+}
+
+.about-sec .about-main .video img.play-btn {
+  width: 70px;
+}
+
+.about-sec .about-main .video a {
+  border: 1px solid #ffff;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  line-height: 115px;
+}
+
+@media (max-width: 991.98px) {
+  .about-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.teams .item {
+  background-color: #fff;
+  -webkit-box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.48);
+  box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.48);
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.teams .item img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.teams .item h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #00b0ff;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.teams .item p {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.teams .item span.waves i {
+  margin: 0px -5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: 0.4;
+}
+
+.teams .item:hover {
+  background-color: #00b0ff;
+  color: #fff;
+}
+
+.teams .item:hover h2 {
+  color: #fff;
+}
+
+.updates {
+  margin-top: 80px;
+}
+
+.updates h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.updates .post {
+  padding: 0px;
+}
+
+.updates .post:hover {
+  -webkit-box-shadow: 0px 0px 43px -5px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 43px -5px rgba(0, 0, 0, 0.55);
+}
+
+.updates .post-info {
+  padding: 25px 10px 40px 10px;
+}
+
+.updates .post-info p {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.updates .btn-main {
+  background-color: #00b0ff;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin: 40px auto;
+}
+
+.footer-top {
+  margin-top: 150px;
+}
+
+.footer-top h1.mainheading {
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: -30px;
+}
+
+.footer-top .insta-area img {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer-top .follow {
+  text-align: left;
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.footer-top .follow img {
+  float: left;
+}
+
+.footer-top .main-footer {
+  background-color: #000;
+  margin-top: -7%;
+  min-height: 20vh;
+}
+
+.footer-top p.footer-text {
+  font-size: 12px;
+  margin: 20px 0px;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.footer-top p.footer-text span {
+  margin-left: 15px;
+}
+
+.footer-top ul.footer-list {
+  padding: 0px;
+  list-style: none;
+}
+
+.footer-top ul.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-top ul.footer-list li a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-top ul.footer-list li a:before {
+  content: url(../img/wave-list.png);
+  margin-right: 10px;
+  vertical-align: text-bottom;
+}
+
+@media (max-width: 991.98px) {
+  .footer-top h1.mainheading {
+    font-size: 36px;
+    margin-bottom: -10px;
+  }
 }
 
 body {
@@ -10847,10 +11048,20 @@ h1.mainheading {
   margin-top: 100px;
 }
 
+.mt-8 {
+  margin-top: 180px;
+}
+
 @media (max-width: 991.98px) {
   h1.mainheading {
     font-size: 50px;
     margin-bottom: -15px;
+  }
+  .teams button.owl-next {
+    right: 0;
+  }
+  .teams button.owl-prev {
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -230,20 +230,65 @@ div#first_div img {
 .owl-slider {
     margin-top: 20px;
 }
-.owl-nav {
+.productitems .owl-nav {
     position: absolute;
     top: 70px;
     right: -50px;
 }
-button.owl-next {
+.productitems button.owl-next {
     background-color: #f2d800;
     border: none;
     width: 30px;
     height: 30px;
 }
-button.owl-prev {
+.productitems button.owl-prev {
     background-color: #f2d800;
     border: none;
     width: 30px;
     height: 30px;
+}
+button.owl-dot {
+    display: none;
+}
+
+/* teams */
+
+.teams button.owl-prev {
+    position: absolute;
+    top: 35%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    left: -70px;
+    -webkit-box-shadow: 0px 0px 43px -5px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 43px -5px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 43px -5px rgba(0,0,0,0.55);
+}
+.teams button.owl-next {
+    position: absolute;
+    top: 35%;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    right: -70px;
+    -webkit-box-shadow: 0px 0px 43px -5px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 43px -5px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 43px -5px rgba(0,0,0,0.55);
+}
+.teams button.owl-next:after {
+    font-family: FontAwesome;
+    content: "\f178";
+    color: #0022ff;
+}
+.teams button.owl-prev:after {
+    font-family: FontAwesome;
+    content: "\f177";
+    color: #0022ff;
+}
+.teams .owl-nav button span {
+    display: none;
 }
