@@ -1,0 +1,166 @@
+header.banner {
+    min-height: 100vh;
+    background-image: url(../img/banner-bg.jpg);
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .small-caption {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 190px;
+
+        h2 {
+            font-family: $play;
+            font-style: italic;
+            color: #000;
+            font-size: 50px;
+        }
+
+        p {
+            font-family: $play;
+            font-style: italic;
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+
+    .boats {
+        background-image: url(../img/boats-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        width: 1030px;
+        left: 0;
+        right: 0;
+        height: 599px;
+        margin: 0 auto;
+
+        .custom-nav-pills {
+            .nav-tabs {
+                border: none;
+                display: block;
+                float: right;
+            }
+
+            .nav-tabs .nav-link {
+                border: 1px solid #ada7a7;
+                padding: 0px;
+            }
+
+            li.nav-item {
+                margin-bottom: 10px !important;
+
+                a.nav-link.active {
+                    border: 3px solid #00b0ff;
+                }
+            }
+        }
+    }
+
+    .boat-info {
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        small {
+            color: #f2d800;
+
+            span {
+                color: #787878 !important;
+            }
+        }
+    }
+
+    .boat-dscrptn {
+        a.nav-link {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            color: #949494;
+        }
+
+        .nav-link.active {
+            border-bottom: 3px solid #00b0ff !important;
+            border: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: $ral;
+        }
+    }
+
+    .tab-content {
+        padding: 20px 0px;
+        min-height: 250px;
+
+        p {
+            font-size: 16px;
+            color: #787878;
+            line-height: 24px;
+        }
+    }
+
+    h3 {
+        font-family: $mont;
+        font-size: 24px;
+        font-weight: 800;
+        float: left;
+        margin: 0px 20px 0px 0px;
+    }
+
+    .btn-main {
+        @include btn-main;
+    }
+
+    a.link {
+        color: #00b0ff;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 2px solid #00b0ff;
+    }
+    .pagntn {
+        position: absolute;
+        right: -12px;
+        top: 124px;
+        background-color: #000;
+        color: #fff;
+        padding: 5px 13px;
+        font-size: 12px;
+    }
+}
+
+
+@include media-breakpoint-down(md) {
+    header.banner .boats {
+        background-size: cover;
+        width: 90%;
+        height: 100%;
+        top: 340px;
+        position: relative; 
+    }
+    header.banner .small-caption h2 {   
+        font-size: 28px;
+    }
+    header.banner {
+        min-height: 260vh;     
+    }
+    
+  }
+
+  @include media-breakpoint-between(md, lg) {
+   
+  }
+

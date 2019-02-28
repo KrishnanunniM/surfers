@@ -1,8 +1,22 @@
+$mont  :'Montserrat', sans-serif;
+$ral :'Raleway', sans-serif;
+$play : 'Playfair Display', serif;
 
+@mixin btn-main {
+    background-color: #00b0ff; 
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 14px;   
+    font-weight: 600;
+}
 @import "../bootstrap/scss/bootstrap";
+@import "navbar";
+@import "banner";
+@import "about";
 
 body {
-    font-family: $font-text;  
+    font-family: $mont;  
     letter-spacing: .0625em;
     font-size: 1rem;
 }
@@ -12,3 +26,19 @@ button{
 .bg-black {
     background-color: #161616!important;
 }
+h1.mainheading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 198px;
+    opacity: 0.1;
+    text-align: center;
+    margin-bottom: -60px;
+    z-index: -1;
+    margin-top: 100px;
+}
+@include media-breakpoint-down(md) {
+    h1.mainheading { 
+        font-size: 50px; 
+        margin-bottom: -15px;
+    }
+    
+  }

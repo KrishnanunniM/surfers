@@ -1,0 +1,28 @@
+.about-sec {
+    background-image: url(../img/about-bg.jpg);
+    height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .about-info {
+        margin-bottom: -10%;
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+        p{
+            font-family: $play;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+        }
+        a.link{
+            color: #00b0ff;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid #00b0ff;
+        }
+    }
+}
