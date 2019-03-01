@@ -1,63 +1,116 @@
 .footer-top {
     margin-top: 150px;
-    h1.mainheading{
+
+    h1.mainheading {
         font-size: 80px;
         text-transform: uppercase;
         margin-top: 0px;
         margin-bottom: -30px;
     }
+
     .insta-area img {
         display: block;
         margin: 0 auto;
     }
+
     .follow {
         text-align: left;
         display: block;
         background-color: #fff;
         padding: 10px;
-        img{
-           float: left;
+
+        img {
+            float: left;
         }
     }
-    .main-footer{
+
+    .main-footer {
         background-color: #000;
         margin-top: -7%;
         min-height: 20vh;
     }
+
     p.footer-text {
         font-size: 12px;
         margin: 20px 0px;
         color: #fff;
         opacity: 0.4;
-        span{
+
+        span {
             margin-left: 15px;
-        }       
+        }
     }
+
     ul.footer-list {
         padding: 0px;
         list-style: none;
-        li{
+
+        li {
             margin-bottom: 10px;
-            a{
+
+            a {
                 font-size: 14px;
                 color: #fff;
                 text-decoration: none;
-                &:before{                    
-                        content: url(../img/wave-list.png);
-                        margin-right: 10px;
-                        vertical-align: text-bottom;
-                   
+
+                &:before {
+                    content: url(../img/wave-list.png);
+                    margin-right: 10px;
+                    vertical-align: text-bottom;
+
                 }
             }
+        }       
+    }
+    .newsletter{
+        h2 {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 30px;
+        }
+        input.form-control {
+            width: 300px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #605c5c;
+            border-radius: 0px;
+            padding: 10px 40px;
+            box-shadow: none; 
+        }   
+        span.mail--ico {
+            position: absolute;
+            top: 0px;
+            font-size: 24px;
+        }
+        a.btn.send-btn {
+            position: absolute;
+            top: 0;
+            right: 30px;
+            background-color: #00b0ff;
+            border-radius: 50%;
+            padding: 4px 10px;
         }
     }
-    
+
 }
 
 
 @include media-breakpoint-down(md) {
     .footer-top h1.mainheading {
-        font-size: 36px;   
-        margin-bottom: -10px;     
+        font-size: 36px;
+        margin-bottom: -10px;
+    }
+    .footer-top ul.footer-list li a:before{
+        content: none;
+    }
+    .footer-top .main-footer {
+        margin-top: 0px;
+    }
+    ul.footer-list {
+        text-align: center;
+    }
+    p.footer-text {
+        text-align: center;
     }
 }
+

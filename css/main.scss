@@ -40,6 +40,9 @@ h1.mainheading {
     z-index: -1;
     margin-top: 100px;
 }
+a{
+    outline: none;
+}
 .mt-8 {
     margin-top: 180px;
 }
@@ -54,4 +57,12 @@ h1.mainheading {
     .teams button.owl-prev{
        left: 0;
      }
+  }
+
+  @include media-breakpoint-between(md, lg) {
+    h1.mainheading { 
+        font-size: 50px; 
+        margin-bottom: -15px;
+    }
+
   }

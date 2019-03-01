@@ -131,6 +131,7 @@ header.banner {
         text-decoration: none;
         border-bottom: 2px solid #00b0ff;
     }
+
     .pagntn {
         position: absolute;
         right: -12px;
@@ -149,25 +150,36 @@ header.banner {
         width: 90%;
         height: 100%;
         top: 340px;
-        position: relative; 
+        position: relative;
     }
-    header.banner .small-caption h2 {   
+
+    header.banner .small-caption h2 {
         font-size: 28px;
     }
+
     header.banner {
-        min-height: 260vh;     
+        min-height: 260vh;
     }
-    .productitems .owl-nav {       
-        top: -40px;      
+
+    .productitems .owl-nav {
+        top: -40px;
     }
-    header.banner .pagntn {     
+
+    header.banner .pagntn {
         left: 0;
         top: -15px;
-        right: auto;      
+        right: auto;
     }
-  }
+}
 
-  @include media-breakpoint-between(md, lg) {
-   
-  }
-
+@include media-breakpoint-between(md, lg) {
+    header.banner .boats {
+        width: 96%;
+    }
+    .teams button.owl-prev {     
+        left: -32px;       
+    }
+    .teams button.owl-next {     
+        right: -32px;       
+    }
+}

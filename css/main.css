@@ -10563,6 +10563,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .custom-navbar {
   margin-top: 30px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .custom-navbar a.navbar-brand {
@@ -10590,6 +10592,7 @@ a.text-dark:hover, a.text-dark:focus {
 .custom-navbar ul.social-icon {
   list-style: none;
   padding: 0px;
+  margin-bottom: 0px;
 }
 
 .custom-navbar ul.social-icon li {
@@ -10609,6 +10612,20 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 38px;
 }
 
+.navbar-shrink {
+  background-color: #fff;
+  margin-top: 0px;
+}
+
+.navbar-shrink a.navbar-brand {
+  font-size: 24px;
+}
+
+#mainNav {
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
 @media (max-width: 991.98px) {
   span.navbar-toggler-icon {
     width: 30px;
@@ -10623,6 +10640,13 @@ a.text-dark:hover, a.text-dark:focus {
   div#navbarCollapse {
     background-color: #00b0ff;
     padding: 20px 10px;
+  }
+  .custom-navbar a.navbar-brand {
+    font-size: 22px;
+  }
+  ul.social-icon.ml-auto {
+    display: table;
+    margin: 20px auto;
   }
 }
 
@@ -10802,6 +10826,18 @@ header.banner .pagntn {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  header.banner .boats {
+    width: 96%;
+  }
+  .teams button.owl-prev {
+    left: -32px;
+  }
+  .teams button.owl-next {
+    right: -32px;
+  }
+}
+
 .about-sec {
   background-image: url(../img/about-bg.jpg);
   height: 640px;
@@ -10811,7 +10847,7 @@ header.banner .pagntn {
 }
 
 .about-sec .about-main {
-  margin-bottom: -10%;
+  margin-bottom: -43%;
 }
 
 .about-sec .about-main .about-info h2 {
@@ -10857,6 +10893,27 @@ header.banner .pagntn {
   line-height: 115px;
 }
 
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
+}
+
 @media (max-width: 991.98px) {
   .about-main {
     -webkit-box-orient: vertical;
@@ -10866,8 +10923,11 @@ header.banner .pagntn {
   }
 }
 
+.teams .owl-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .teams .item {
-  background-color: #fff;
   -webkit-box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.48);
   box-shadow: 10px 7px 31px -8px rgba(0, 0, 0, 0.48);
   text-align: center;
@@ -11017,10 +11077,54 @@ header.banner .pagntn {
   vertical-align: text-bottom;
 }
 
+.footer-top .newsletter h2 {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.footer-top .newsletter input.form-control {
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #605c5c;
+  border-radius: 0px;
+  padding: 10px 40px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footer-top .newsletter span.mail--ico {
+  position: absolute;
+  top: 0px;
+  font-size: 24px;
+}
+
+.footer-top .newsletter a.btn.send-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  background-color: #00b0ff;
+  border-radius: 50%;
+  padding: 4px 10px;
+}
+
 @media (max-width: 991.98px) {
   .footer-top h1.mainheading {
     font-size: 36px;
     margin-bottom: -10px;
+  }
+  .footer-top ul.footer-list li a:before {
+    content: none;
+  }
+  .footer-top .main-footer {
+    margin-top: 0px;
+  }
+  ul.footer-list {
+    text-align: center;
+  }
+  p.footer-text {
+    text-align: center;
   }
 }
 
@@ -11048,6 +11152,10 @@ h1.mainheading {
   margin-top: 100px;
 }
 
+a {
+  outline: none;
+}
+
 .mt-8 {
   margin-top: 180px;
 }
@@ -11062,6 +11170,13 @@ h1.mainheading {
   }
   .teams button.owl-prev {
     left: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  h1.mainheading {
+    font-size: 50px;
+    margin-bottom: -15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

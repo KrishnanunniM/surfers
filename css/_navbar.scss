@@ -1,5 +1,9 @@
 .custom-navbar{
     margin-top: 30px;
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
     a.navbar-brand {
         font-size: 34px;
         font-weight: 500;
@@ -23,6 +27,7 @@
     ul.social-icon {        
         list-style: none;
         padding: 0px;
+        margin-bottom: 0px;
         li{
             float: left;
             margin-left: 15px;
@@ -40,6 +45,17 @@
         }
     }
 }
+.navbar-shrink {
+    background-color: #fff;
+    margin-top: 0px;
+    a.navbar-brand {
+        font-size: 24px;        
+    }
+}
+#mainNav {  
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;    
+}
 
 @include media-breakpoint-down(md) {
     span.navbar-toggler-icon {
@@ -55,6 +71,13 @@
     div#navbarCollapse {
         background-color: #00b0ff;
         padding: 20px 10px;
+    }
+    .custom-navbar a.navbar-brand {
+        font-size: 22px;       
+    }
+    ul.social-icon.ml-auto {
+        display: table;
+        margin: 20px auto;
     }
   }
 
