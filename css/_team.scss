@@ -47,3 +47,12 @@
     }    
  
 }
+
+@include media-breakpoint-down(md) {
+    .owl-item:nth-child(odd) {
+        
+    }
+    .owl-item:nth-child(even) {
+      margin-top: 0px !important;
+    }
+    }

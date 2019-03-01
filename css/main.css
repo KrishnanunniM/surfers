@@ -10972,6 +10972,12 @@ header.banner .pagntn {
   color: #fff;
 }
 
+@media (max-width: 991.98px) {
+  .owl-item:nth-child(even) {
+    margin-top: 0px !important;
+  }
+}
+
 .updates {
   margin-top: 80px;
 }
